@@ -1,0 +1,119 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Set de Utensilios de Cocina Premium",
+      "categoria": "cocina",
+      "precio": 89.90,
+      "imagen": "img/productos/utenciococina.png",
+      "descripcion": "Juego completo de utensilios resistentes al calor, mango ergonómico y acabado profesional.",
+      "etiquetas": ["Cocina", "Utensilios", "Nuevo"]
+    },
+    {
+      "id": 2,
+      "nombre": "Organizador Multiuso Transparente",
+      "categoria": "hogar",
+      "precio": 29.90,
+      "imagen": "img/productos/organizador.jpg",
+      "descripcion": "Ideal para guardar maquillaje, juguetes o accesorios. Material resistente y diseño elegante.",
+      "etiquetas": ["Hogar", "Organizador", "Tendencia"]
+    },
+    {
+      "id": 3,
+      "nombre": "Set de Tapers Herméticos x5",
+      "categoria": "plastiqueria",
+      "precio": 49.90,
+      "imagen": "img/productos/tapers.jpg",
+      "descripcion": "Conserva tus alimentos frescos por más tiempo con este set de tapers apilables y seguros.",
+      "etiquetas": ["Plastiquería", "Cocina", "Ofertas"]
+    },
+    {
+      "id": 4,
+      "nombre": "Peluches Gigantes Premium",
+      "categoria": "peluches",
+      "precio": 139.90,
+      "imagen": "img/productos/peluches-gigantes.jpg",
+      "descripcion": "Peluches suaves, grandes y de alta calidad. Regalo ideal para toda ocasión.",
+      "etiquetas": ["Peluches", "Regalos", "Popular"]
+    },
+    {
+      "id": 5,
+      "nombre": "Manta Polar Doble Capa",
+      "categoria": "hogar",
+      "precio": 59.90,
+      "imagen": "img/productos/manta-polar.jpg",
+      "descripcion": "Manta abrigadora, ideal para invierno. Suave, duradera y disponible en varios colores.",
+      "etiquetas": ["Hogar", "Abrigo", "Nuevo"]
+    },
+    {
+      "id": 6,
+      "nombre": "Set Higiene Personal Completo",
+      "categoria": "higiene",
+      "precio": 34.90,
+      "imagen": "img/productos/higiene-personal.jpg",
+      "descripcion": "Incluye cepillo, crema dental, toalla facial y desinfectante. Ideal para viajes.",
+      "etiquetas": ["Higiene", "Viajes", "Limpieza"]
+    },
+    {
+      "id": 7,
+      "nombre": "Luz LED Recargable con Sensor",
+      "categoria": "tecnologia",
+      "precio": 44.90,
+      "imagen": "img/productos/luz-led.jpg",
+      "descripcion": "Iluminación inteligente con sensor de movimiento. Ideal para pasillos o closets.",
+      "etiquetas": ["Tecnología", "LED", "Eficiencia"]
+    },
+    {
+      "id": 8,
+      "nombre": "Cojines Decorativos Set x3",
+      "categoria": "hogar",
+      "precio": 69.90,
+      "imagen": "img/productos/cojines-decorativos.jpg",
+      "descripcion": "Cojines suaves, coloridos y modernos para realzar tu sala o dormitorio.",
+      "etiquetas": ["Hogar", "Decoración", "Tendencia"]
+    }
+  ],
+
+  "ofertas": [
+    {
+      "id": 101,
+      "nombre": "Pack x3 Tapers Herméticos - Oferta Flash",
+      "categoria": "plastiqueria",
+      "precioAnterior": 49.90,
+      "precioOferta": 34.90,
+      "imagen": "img/ofertas/Tomatodooferta.jpg",
+      "descripcion": "Pack de 3 unidades con sellado hermético. Aprovecha hasta agotar stock.",
+      "etiquetas": ["Oferta", "Cocina"]
+    },
+    {
+      "id": 102,
+      "nombre": "Audífonos Bluetooth Pro",
+      "categoria": "tecnologia",
+      "precioAnterior": 99.90,
+      "precioOferta": 69.90,
+      "imagen": "img/ofertas/audifonos.jpg",
+      "descripcion": "Sonido HD, cancelación de ruido y estuche cargador. Últimas unidades.",
+      "etiquetas": ["Tecnología", "Bluetooth", "Descuento"]
+    },
+    {
+      "id": 103,
+      "nombre": "Set de Vasos de Vidrio x6",
+      "categoria": "hogar",
+      "precioAnterior": 59.90,
+      "precioOferta": 39.90,
+      "imagen": "img/ofertas/vasos.jpg",
+      "descripcion": "Diseño elegante, resistente al calor y frío. Perfectos para tu mesa.",
+      "etiquetas": ["Hogar", "Cristalería", "Oferta"]
+    },
+    {
+      "id": 104,
+      "nombre": "Mochila Antirrobo USB Impermeable",
+      "categoria": "tecnologia",
+      "precioAnterior": 129.90,
+      "precioOferta": 89.90,
+      "imagen": "img/ofertas/mochila-usb.jpg",
+      "descripcion": "Diseño moderno con puerto USB y compartimientos ocultos.",
+      "etiquetas": ["Mochilas", "USB", "Tecnología"]
+    }
+  ]
+}

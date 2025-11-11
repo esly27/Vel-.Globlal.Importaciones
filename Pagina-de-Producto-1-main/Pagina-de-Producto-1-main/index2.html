@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Velu Global - Header Responsive</title>
+
+  <!-- estilos -->
+  <link rel="stylesheet" href="Css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- 🔝 Topbar fija (aislada con prefijo vg-) -->
+  <div id="vg-welcome" class="vg-welcome" aria-hidden="true">
+    👋 Bienvenido a <strong>Velu Global Importaciones Perú</strong>
+  </div>
+
+  <div class="vg-topbar" role="region" aria-label="Barra de contacto">
+    <div class="vg-left">
+      <i class="fas fa-clock"></i>
+      <span>Lunes a Sábado: 9:00 a.m. - 6:00 p.m.</span>
+    </div>
+
+    <div class="vg-right">
+      <a class="vg-wa" target="_blank"
+        href="https://wa.me/51920835758?text=Hola%2C%20estoy%20interesado%20en%20tus%20productos.%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F">
+        <i class="fab fa-whatsapp"></i> Asesor 1
+      </a>
+      <a class="vg-wa" target="_blank"
+        href="https://wa.me/51926852886?text=Hola%2C%20estoy%20interesado%20en%20tus%20productos.%20%C2%BFPodr%C3%ADas%20brindarme%20m%C3%A1s%20informaci%C3%B3n%3F">
+        <i class="fab fa-whatsapp"></i> Asesor 2
+      </a>
+    </div>
+  </div>
+  <!-- CONTIENE: LOGO - Y BUSCADOR -->
+  <header id="inicio" class="header-container">
+    <div class="header-inner">
+
+      <!-- LOGO -->
+      <div class="logo-section">
+        <img src="img/LogoPrincipal/Logo.jpg" alt="Logo Velu Global" class="logo-img" />
+        <div class="logo-text">
+          <h1 class="brand-name">Velu Global</h1>
+          <p class="brand-slogan">Conectamos el mundo con los mejores productos.</p>
+        </div>
+      </div>
+
+      <!-- BUSCADOR -->
+      <form id="searchForm" class="search-bar" role="search" aria-label="Buscar productos">
+        <input type="search" id="searchInput" class="search-input" placeholder="Buscar producto o categoría..."
+          aria-label="Buscar producto o categoría" />
+        <select id="searchCategory" class="category-select" aria-label="Seleccionar categoría">
+          <option value="">Todas las categorías</option>
+          <option value="peluches">Peluches</option>
+          <option value="higiene">Limpieza e higiene</option>
+          <option value="plastiqueria">Plastiquería</option>
+          <option value="bebes">Mundo bebés</option>
+          <option value="hogar">Hogar y Decoración</option>
+          <option value="tecnologia">Tecnología y Accesorios</option>
+        </select>
+        <button type="submit" class="search-btn" aria-label="Buscar">🔍</button>
+      </form>
+
+      <!-- HAMBURGUESA (botón) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+      </button>
+
+    </div> <!-- /.header-inner -->
+
+    <!-- NAV PRINCIPAL -->
+    <nav class="nav-wrapper">
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#inicio">Inicio</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#productos" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Productos ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Cocina</a></li>
+            <li><a href="#">Hogar & Decoración</a></li>
+            <li><a href="#">Plastiquería</a></li>
+            <li><a href="#">Tecnología</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="#ofertas" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Ofertas ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Temporada</a></li>
+            <li><a href="#">Flash / Express</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="#nosotros" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Nosotros ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Nuestra empresa</a></li>
+            <li><a href="#">Misión & Visión</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="#contacto" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Contacto ▾</a>
+          <ul class="submenu">
+            <li><a href="#">Formulario</a></li>
+            <li><a href="#">Tiendas & Sucursales</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- 🌍 CARRUSEL DESTACADOS -->
+    <section class="carousel-section">
+      <h2 class="carousel-title">Explora nuestras categorías</h2>
+
+      <!-- 🔹 Filtros -->
+      <div class="carousel-filters">
+        <button class="filter-btn active" data-category="todos">Todos</button>
+        <button class="filter-btn" data-category="cocina">Cocina</button>
+        <button class="filter-btn" data-category="hogar">Hogar</button>
+        <button class="filter-btn" data-category="plastiqueria">Plastiquería</button>
+        <button class="filter-btn" data-category="peluches">Peluches</button>
+        <button class="filter-btn" data-category="tecnologia">Tecnología</button>
+        <button class="filter-btn" data-category="higiene">Higiene</button>
+      </div>
+
+      <!-- 🔹 Carrusel -->
+      <div class="carousel-container">
+        <div class="carousel-track"></div>
+        <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" defer></script>
+    <!-- 🛒 SECCIÓN PRODUCTOS DESTACADOS -->
+    <section id="productos" class="section productos">
+      <div class="container-inner">
+        <h3>Productos destacados</h3>
+        <div class="productos-grid" id="productosGrid"></div>
+        <a href="#todos-productos" class="btn-vermas">Ver todo el catálogo</a>
+      </div>
+    </section>
+
+
+
+    <!-- 🌍 SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="img/empresa/almacen.jpg" alt="Almacén Velu Global">
+        </div>
+        <div class="about-text">
+          <h2>Sobre Nosotros</h2>
+          <p>Somos <strong>Velu Global Importaciones Perú</strong>, una empresa importadora con presencia internacional,
+            dedicada a ofrecer los mejores productos del mundo al alcance de todos nuestros clientes.</p>
+          <p>Nos especializamos en la venta por mayor y menor de productos de <em>hogar, tecnología, plastiquería y
+              más</em>,
+            garantizando siempre la mejor calidad y atención personalizada.</p>
+          <div class="about-values">
+            <div><i class="fas fa-box"></i> Importación Directa</div>
+            <div><i class="fas fa-headset"></i> Asesoría Personalizada</div>
+            <div><i class="fas fa-truck"></i> Entregas Rápidas</div>
+          </div>
+          <a href="Nosotros.html" class="btn-primary">Conócenos más</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌍 SECCIÓN VENTAJAS COMPETITIVAS (DISEÑO BASADO EN LOGO) -->
+    <section class="vg-advantages">
+      <div class="vg-container">
+        <h2 class="vg-title">¿Por qué elegir <span>Velu Global</span>?</h2>
+        <p class="vg-subtitle">Somos una empresa importadora confiable, moderna y eficiente. Brindamos soluciones
+          rápidas, seguras y con calidad internacional.</p>
+
+        <div class="vg-advantages-grid">
+          <div class="vg-card">
+            <div class="vg-icon-box">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Calidad Garantizada</h3>
+            <p>Importamos directamente desde fábricas certificadas. Cada producto pasa por controles de calidad.</p>
+          </div>
+
+          <div class="vg-card">
+            <div class="vg-icon-box">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Atención Personalizada</h3>
+            <p>Un equipo de asesores disponibles por WhatsApp para resolver dudas y ofrecer soporte en todo momento.</p>
+          </div>
+
+          <div class="vg-card">
+            <div class="vg-icon-box">
+              <i class="fas fa-plane-departure"></i>
+            </div>
+            <h3>Envíos Rápidos</h3>
+            <p>Coordinamos entregas en Lima, Ica y el sur del Perú con eficiencia y puntualidad garantizada.</p>
+          </div>
+
+          <div class="vg-card">
+            <div class="vg-icon-box">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3>Presencia Internacional</h3>
+            <p>Conectamos el mundo con los mejores productos y precios. Velu Global, tu socio comercial de confianza.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 💬 TESTIMONIOS CLIENTES -->
+    <section class="vg-testimonials">
+      <div class="vg-container">
+        <h2 class="vg-title">Lo que dicen nuestros clientes</h2>
+        <p class="vg-subtitle">La confianza de nuestros clientes nos impulsa a seguir creciendo día a día.</p>
+
+        <div class="vg-testimonials-grid">
+
+          <div class="vg-testimonial-card">
+            <div class="vg-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="vg-comment">
+              “Excelente atención y productos de calidad. Me ayudaron a importar para mi tienda sin complicaciones.”
+            </p>
+            <div class="vg-client">
+              <img src="https://i.pravatar.cc/100?img=1" alt="Cliente 1">
+              <div>
+                <h4>María López</h4>
+                <span>Emprendedora - Lima</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="vg-testimonial-card">
+            <div class="vg-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="vg-comment">
+              “Velu Global me ayudó a conseguir productos exclusivos para mi negocio. Cumplieron con los tiempos de
+              entrega.”
+            </p>
+            <div class="vg-client">
+              <img src="https://i.pravatar.cc/100?img=12" alt="Cliente 2">
+              <div>
+                <h4>José Castillo</h4>
+                <span>Distribuidor - Ica</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="vg-testimonial-card">
+            <div class="vg-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="vg-comment">
+              “Muy recomendados. Comunicación directa por WhatsApp, seguimiento en cada pedido y excelente servicio.”
+            </p>
+            <div class="vg-client">
+              </p>
+              <div class="vg-client">
+                <img src="https://i.pravatar.cc/100?img=5" alt="Cliente 3">
+                <div>
+                  <h4>Andrea Ramos</h4>
+                  <span>Minorista - Chincha</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- 💼 SECCIÓN DE CONTACTO -->
+    <section class="vg-contact" id="contacto">
+      <div class="vg-container">
+        <div class="vg-contact-header reveal">
+          <h2 class="vg-title">Contáctanos</h2>
+          <p class="vg-subtitle">Estamos listos para atenderte. Escríbenos o visítanos y te asesoraremos sin compromiso.
+          </p>
+        </div>
+
+        <div class="vg-contact-content reveal">
+          <!-- 🔹 Información de contacto -->
+          <div class="vg-contact-info">
+            <div class="vg-info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Teléfonos</h4>
+                <p>+51 920 835 758</p>
+                <p>+51 926 852 886</p>
+              </div>
+            </div>
+
+            <div class="vg-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Correo</h4>
+                <p>ventas@veluglobal.com</p>
+              </div>
+            </div>
+
+            <div class="vg-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Dirección</h4>
+                <p>Lima, Perú — Atención a Lima, Ica y el Sur del país</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 🔹 Formulario -->
+          <form class="vg-contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <div class="vg-form-group">
+              <input type="text" placeholder="Tu nombre completo" required>
+              <input type="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="vg-form-group">
+              <input type="text" placeholder="Asunto" required>
+            </div>
+            <div class="vg-form-group">
+              <textarea rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+            </div>
+            <button type="submit" class="vg-btn">Enviar mensaje</button>
+          </form>
+        </div>
+
+        <!-- 🌍 Mapa de ubicación -->
+        <div class="vg-map reveal">
+          <iframe src="https://www.google.com/maps?q=Lima,Peru&output=embed"></iframe>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Columna 1: Logo y descripción -->
+      <div class="footer-col footer-about">
+        <img src="img/LogoPrincipal/Logo.jpg" alt="Logo Velu Global" class="footer-logo">
+        <p class="footer-desc">
+          Proveedor mayorista e importador directo de productos desde China. Venta por caja de artículos
+          exclusivos para cocina, hogar, plastiquería, mochilas, cojines, papeleras, bancos, tecnología y más.
+          Atención a revendedores en Lima y provincias. Precios competitivos, entregas rápidas y asesoría
+          personalizada.
+        </p>
+      </div>
+
+      <!-- Columna 2: Categorías -->
+      <div class="footer-col footer-links">
+        <h3>Categorías</h3>
+        <ul>
+          <li><a href="#">Tecnología</a></li>
+          <li><a href="#">Moda y accesorios</a></li>
+          <li><a href="#">Hogar y decoración</a></li>
+          <li><a href="#">Cocina y menaje</a></li>
+        </ul>
+      </div>
+
+      <!-- 🌐 Columna 3: Medios de Pago y Contacto -->
+      <div class="footer-col footer-pay">
+        <h3>Medios de Pago</h3>
+        <div class="pay-methods">
+          <img src="img/footer/Yape_peru.png" alt="Yape">
+          <img src="img/footer/plin-seeklogo.png" alt="Plin">
+          <img src="img/footer/Logo-bcp-vector.svg" alt="Banco BCP">
+          <img src="img/footer/Interbank_logo.svg.png" alt="Banco Interbank">
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contáctanos</h3>
+          <p><strong>Teléfono:</strong> +51 950 227 199</p>
+          <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Velu Global | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- 💬 BOTÓN WHATSAPP MODERNO (Velu Global) -->
+  <div class="whatsapp-widget">
+    <!-- Botón flotante -->
+    <div class="whatsapp-button" id="whatsappButton">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </div>
+
+    <!-- Ventana emergente -->
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <span class="popup-title"><i class="fab fa-whatsapp"></i> Velu Global</span>
+        <button class="popup-close" id="closePopup">×</button>
+      </div>
+      <div class="popup-body">
+        <p>¿Deseas hablar con un asesor?</p>
+        <button class="open-chat" id="openChatBtn">Abrir chat</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="json/menu.js"></script>
+  <script src="json/carousel.js"></script>
+  <script src="json/header.js"></script>
+  <script src="json/wtsp.js"></script>
+  <script src="json/ProdOfert.js"></script>
+  <script src="json/scroll.js"></script>
+
+</body>
+
+</html>
